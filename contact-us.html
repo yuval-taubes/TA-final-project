@@ -20,8 +20,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
+        type="text/css">
+
+    <script src="assets/scripts/contact-us.js" defer></script>
+
 </head>
 <!-- Test -->
+
 <body id="body">
     <div class="wrapper">
         <main>
@@ -49,8 +61,10 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="col2 col2-img">
-                            <img src="assets/img/office.jpg">
+                        <div class="col2 col2-map">
+                            <div id="map" class="map">
+
+                            </div>
                         </div>
                     </div>
                 </div>
