@@ -1,12 +1,21 @@
 "use strict";
 
 
+mapboxgl.accessToken =
+	"pk.eyJ1IjoieXV2YWwtdGF1YmVzIiwiYSI6ImNsMXdnYXJmMTBkcjIzY210bzd0ZDZkOXUifQ.Jr3k4ppO_A0K_Xqvj9dkzg";
+const map = new mapboxgl.Map({
+	container: "map",
+	style: "mapbox://styles/mapbox/streets-v11",
+	center: [-79.4512, 43.6568],
+	zoom: 7,
+});
+
 
 	// const longitude = position.coords.longitude
 	// const latitude = position.coords.latitude;
 
 	map.flyTo({
-		center: [ 36.5323, 116.9325],
+		center: [ -117, 36],
 		essential: true, // this animation is considered essential with respect to prefers-reduced-motion
 	});
 
@@ -92,7 +101,7 @@
             'type': 'Feature',
             'geometry': {
             'type': 'Point',
-            'coordinates': [ 36.5323, 116.9325] // icon position [lng, lat]
+            'coordinates': [ -117, 36]// icon position [lng, lat]
             }
             }
             ]
@@ -108,15 +117,6 @@
             });
             });
 
-
-mapboxgl.accessToken =
-	"pk.eyJ1IjoieXV2YWwtdGF1YmVzIiwiYSI6ImNsMXdnYXJmMTBkcjIzY210bzd0ZDZkOXUifQ.Jr3k4ppO_A0K_Xqvj9dkzg";
-const map = new mapboxgl.Map({
-	container: "map",
-	style: "mapbox://styles/mapbox/streets-v11",
-	center: [-79.4512, 43.6568],
-	zoom: 14,
-});
 
 
 //random bullshit go
