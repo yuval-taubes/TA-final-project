@@ -84,7 +84,7 @@ const map = new mapboxgl.Map({
             // in the smooth animation of the dot.
             map.triggerRepaint();
              
-            // Return `true` to let the map know that the image was updated.
+            // Return `true` to let the map know that the image was updated. hello
             return true;
             }
             };
