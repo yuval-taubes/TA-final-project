@@ -1,14 +1,21 @@
 "use strict";
 
-function showLocation(position) {
-	console.log(position);
+
+mapboxgl.accessToken =
+	"pk.eyJ1IjoieXV2YWwtdGF1YmVzIiwiYSI6ImNsMXdnYXJmMTBkcjIzY210bzd0ZDZkOXUifQ.Jr3k4ppO_A0K_Xqvj9dkzg";
+const map = new mapboxgl.Map({
+	container: "map",
+	style: "mapbox://styles/mapbox/streets-v11",
+	center: [-79.4512, 43.6568],
+	zoom: 7,
+});
+
 
 	// const longitude = position.coords.longitude
 	// const latitude = position.coords.latitude;
 
-	const { longitude, latitude, accuracy } = position.coords;
 	map.flyTo({
-		center: [longitude, latitude],
+		center: [ -117, 36],
 		essential: true, // this animation is considered essential with respect to prefers-reduced-motion
 	});
 
@@ -94,7 +101,7 @@ function showLocation(position) {
             'type': 'Feature',
             'geometry': {
             'type': 'Point',
-            'coordinates': [longitude, latitude] // icon position [lng, lat]
+            'coordinates': [ -117, 36]// icon position [lng, lat]
             }
             }
             ]
@@ -109,28 +116,7 @@ function showLocation(position) {
             }
             });
             });
-}
 
-function errorHandler() {
-	console.log("nope");
-}
-
-if (navigator.geolocation) {
-	navigator.geolocation.getCurrentPosition(showLocation, errorHandler, {
-		enableHighAccuracy: true,
-	});
-} else {
-	window.alert("geolocation not enabled");
-}
-
-mapboxgl.accessToken =
-	"pk.eyJ1IjoieXV2YWwtdGF1YmVzIiwiYSI6ImNsMXdnYXJmMTBkcjIzY210bzd0ZDZkOXUifQ.Jr3k4ppO_A0K_Xqvj9dkzg";
-const map = new mapboxgl.Map({
-	container: "map",
-	style: "mapbox://styles/mapbox/streets-v11",
-	center: [-79.4512, 43.6568],
-	zoom: 14,
-});
 
 
 //random bullshit go
