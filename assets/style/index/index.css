@@ -2,14 +2,6 @@
 
 
 
-
-
-
-
-
-
-
-
         /*
         --------------------------------------------------------
         About me section
@@ -202,6 +194,42 @@
 
 
 
+
+
+
+
+
+
+
+
         .about-us{
-            height: 600px;
+            height: 700px;
+            background-image: url(../../../img/person.jpg);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-position: center;
+        }
+
+        .about-us .text-container{
+            text-align: center;
+        }
+
+        .about-us .text-container h2{
+            font-size: 38px;
+            margin-top: 40px;
+            font-family: 'Poppins', helvetica, sans-serif;
+            margin-bottom: 5px;
+        }
+
+        .about-us .text-container p {
+            font-family: 'Poppins', helvetica, sans-serif;
+            width: 700px;
+            margin-bottom: 40px;
+        }
+
+        .about-us .text-container a {
+            font-family: 'Poppins', helvetica, sans-serif;
+            width: 700px;
+            background-color: orange;
         }
