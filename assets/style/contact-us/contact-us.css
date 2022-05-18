@@ -1,8 +1,7 @@
 @import "base.css";
 
 body{
-    /* background-color: #94D2BD; */
-    background-color: #2A2631;
+    background-color: #19D6C0;
     
 }
 
@@ -15,7 +14,7 @@ body{
     height: 50px;
     border-radius: 10px;
     font-size: 18px;
-    color: #fff;
+    color: black;
     background-color:#EE9B00;
     cursor: pointer;
     box-shadow: 0 20px 48px 0 rgba(0, 0, 0, 0.1);
@@ -38,7 +37,7 @@ body{
 }
 
 .contact-text{
-    color: white;
+    color: black;
     font-size: 18px;
     line-height: 30px;
     font-weight: 300;
@@ -52,35 +51,33 @@ body{
 input{
     width: 100%;
     height: 50px;
-    background-color: #000000 ;
-    color: #A2A2A2;
+    background-color: white ;
+    color: black;
     padding: 0 15px;
     font-size: 18px;
     border-radius: 10px;
     box-shadow: 0 20px 48px 0 rgba(170, 169, 169, 0.1);
     margin-top: 5px;
-    border: 1px solid #2A2630;
     
 }
 input[type=submit]{
-    background-color: #286FF2;
+    background-color: #FA8476;
     color: white;
     margin-top: 15px;
 }
-#button{
+#submit-contact{
     width: 100%;
     height: 50px;
     background-color: #000000 ;
-    color: #A2A2A2;
+    color: black;
     padding: 0 15px;
     font-size: 18px;
     border-radius: 10px;
     box-shadow: 0 20px 48px 0 rgba(170, 169, 169, 0.1);
     margin-top: 5px;
-    border: 1px solid #2A2630;
-    background-color: #286FF2;
+    background-color: #FA8476;
     color: white;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 input[type=checkbox]{
@@ -88,6 +85,18 @@ input[type=checkbox]{
     width: 20px;
     margin-right: 10px;
     margin-top: 0px;
+}
+textarea{
+    width: 100%;
+    height: 70%;
+    resize: none;
+    background-color: white ;
+    color: black;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0 20px 48px 0 rgba(170, 169, 169, 0.1);
+    margin-top: 5px;
 }
 label{
     color: white;
@@ -111,7 +120,7 @@ label{
 
 }
 .col2{
-    background-color: #171319;
+    background-color: #19D6C0;
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -123,7 +132,7 @@ label{
 
 }
 .col2 h2{
-    color: white;
+    color:white;
     font-size: 40px;
 }
 .col2 p{
@@ -143,7 +152,6 @@ label{
 }
 form{
     width: 60%;
-    margin-top: 40px;
 }
 form div{
     display: flex;
@@ -171,6 +179,5 @@ header{
     width: 100%;
     height:100%;
     background-color: #286FF2;
-
-    
+    border-radius: 10px;
 }

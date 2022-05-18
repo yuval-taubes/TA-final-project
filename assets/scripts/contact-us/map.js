@@ -1,3 +1,7 @@
+// MAPPPPP
+//random bullshit go
+
+
 "use strict";
 
 
@@ -118,5 +122,7 @@ const map = new mapboxgl.Map({
             });
 
 
+            //form validation
 
-//random bullshit go
+            
+

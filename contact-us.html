@@ -12,7 +12,7 @@
     <title>Articles</title>
 
 
-    <link rel="stylesheet" href="assets/style/contact-us.css" media="all" />
+    <link rel="stylesheet" href="assets/style/contact-us/contact-us.css" media="all" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
@@ -29,7 +29,9 @@
         href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
         type="text/css">
 
-    <script src="assets/scripts/contact-us.js" defer></script>
+    <script src="assets/scripts/contact-us/map.js" defer></script>
+    <script src="assets/scripts/contact-us/contact-us.js" defer></script>
+
 
 </head>
 <!-- Test -->
@@ -42,16 +44,15 @@
                     <div class="row">
                         <div class="col2">
                             <div>
-                                <h2>Woozy</h2>
-                                <p>Customer service has never been easier!</p>
-                                <p>Pratice</p>
-                                <p>push test</p>
+                                <h2>Contact Us</h2>
                             </div>
                             <form>
-                                <input type="text" placeholder="Name" id="username">
+                                <input type="text" placeholder="Name" id="name">
+                                <input type="text" placeholder="Email" id="email">
 
-                                <input type="text" placeholder="Password" id="password">
-                                <button type="button" id="button">Submit</button>
+                                <textarea id="message" placeholder="What's on your mind?"></textarea>
+
+                                <button type="button" id="submit-contact">Submit</button>
                                 <div class="error-div">
                                     <p id="error"></p>
                                 </div>

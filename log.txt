@@ -1,0 +1,105 @@
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .vscode/settings.json
+        deleted:    assets/scripts/contact-us.js
+        deleted:    assets/scripts/index.js
+        deleted:    assets/style/base.css
+        deleted:    assets/style/contact-us.css
+        deleted:    assets/style/index.css
+        deleted:    contact-us.html
+        deleted:    index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git add .
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git commit -m"cleaned main"
+[main 08187c2] cleaned main
+ 8 files changed, 538 deletions(-)
+ delete mode 100644 .vscode/settings.json
+ delete mode 100644 assets/scripts/contact-us.js
+ delete mode 100644 assets/scripts/index.js
+ delete mode 100644 assets/style/base.css
+ delete mode 100644 assets/style/contact-us.css
+ delete mode 100644 assets/style/index.css
+ delete mode 100644 contact-us.html
+ delete mode 100644 index.html
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git push -u origin main
+To https://github.com/yuval-taubes/TA-final-project.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/yuval-taubes/TA-final-project.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git pull
+Merge made by the 'recursive' strategy.
+ text.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text.txt
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git add .
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git commit -m"cleaned main"
+[main 463b302] cleaned main
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 text.txt
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 566 bytes | 566.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/yuval-taubes/TA-final-project.git
+   0fcbd44..463b302  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git switch contact-us
+Switched to branch 'contact-us'
+Your branch is up to date with 'origin/contact-us'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git pull
+Already up to date.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git merge map
+Merge made by the 'recursive' strategy.
+ assets/scripts/contact-us.js | 40 +++++++++++++---------------------------
+ 1 file changed, 13 insertions(+), 27 deletions(-)
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$
+
+ Session contents restored from 5/17/2022 at 3:42:08 PM 
+
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git pull
+Already up to date.
+
+$
+

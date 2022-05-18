@@ -26,6 +26,7 @@ span {
   text-rendering: optimizeLegibility;
   letter-spacing: 0;
   font-weight: 400;
+  color: white;
 }
 
 .container {
