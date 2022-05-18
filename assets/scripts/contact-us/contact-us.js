@@ -37,6 +37,7 @@ submit.addEventListener('click', function(){
         nameInput.value = ""
         emailInput.value = ""
         messageInput.value = ""
+        error.innerText = ""
     }
     else if(validateName(name) == false){
         error.innerText = "Name is Invalid"
