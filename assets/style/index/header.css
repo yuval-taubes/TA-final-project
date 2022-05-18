@@ -1,0 +1,33 @@
+@import "base.css";
+
+header{
+    position: absolute;
+    width: 100%;
+    padding: 18px;
+    z-index: 9999;
+}
+
+header .container{
+    display: flex;
+    justify-content: right;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header ul li{
+    font-family: 'Poppins', helvetica, sans-serif;
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+header ul li + li{
+    margin-left: 35px;
+}
+
+li:hover{
+    color: rgb(88, 88, 88);
+}
