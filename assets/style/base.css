@@ -15,7 +15,7 @@
     }
     
     p, a, li, label, input, textarea, div, span{
-    font-family: 'lora, serif';
+    font-family: "Poppins", helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -33,12 +33,6 @@
     -webkit-animation: fadeIn 0.4s forwards;
     -moz-animation: fade-in 0.4s forwards;
     animation: fadeIn 0.4s forwards;
-    }
-
-    .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
     }
     
   

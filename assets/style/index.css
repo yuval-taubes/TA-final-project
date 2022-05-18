@@ -255,6 +255,8 @@ input[type="button"] {
   padding: 10px 0px 10px 0px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  font-family: "Poppins", helvetica, sans-serif;
 }
 
 input[type="checkbox"] {
@@ -266,18 +268,6 @@ input[type="checkbox"] {
   font-size: 110%;
   display: inline;
 }
-
-
-/* <div class="about-us">
-<div class="text-container">
-    <h2>ABOUT US</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, deserunt recusandae sed assumenda
-        incidunt totam ad ipsam quis?</p>
-        <a class="lrn-btn" href="">Learn More</a>
-</div>
-</div> */
-
-
 
 .about-us {
   height: 700px;
