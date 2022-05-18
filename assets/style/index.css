@@ -256,6 +256,7 @@ input[type="button"] {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  font-size: 18px;
   font-family: "Poppins", helvetica, sans-serif;
 }
 
@@ -342,10 +343,9 @@ text-align: center;
   .landing .container {
     width: 90%;
   }
-
   .container,
   .row-container {
-    max-width: 650px;
+    max-width: 600px;
   }
 
   .col-lg-2 {
@@ -362,9 +362,10 @@ text-align: center;
     width: 530px;
   }
 
+
 }
 
-@media screen and (min-width: 870px) and (max-width: 1145px) {
+@media screen and (min-width: 960px) and (max-width: 1145px) {
   .landing .container {
     width: 100%;
   }
@@ -387,6 +388,7 @@ text-align: center;
     font-family: "Poppins", helvetica, sans-serif;
     width: 700px;
   }
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1145px) {
@@ -397,6 +399,7 @@ text-align: center;
   .container,
   .row-container {
     max-width: 1140px;
+    
   }
 
   .col-lg-2 {
@@ -406,6 +409,8 @@ text-align: center;
   .col-delete {
     display: grid;
   }
+
+  
 }
 
 @media screen and (min-width: 1150px) {
