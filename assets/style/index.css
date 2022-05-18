@@ -1,5 +1,13 @@
 @import "contact-us/base.css";
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  }
+  
+
+
 /*
         --------------------------------------------------------
         About me section
