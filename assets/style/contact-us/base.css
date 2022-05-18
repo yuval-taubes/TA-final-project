@@ -15,7 +15,7 @@
     }
     
     p, a, li, label, input, textarea, div, span{
-    font-family: "Poppins", helvetica, sans-serif;
+    font-family: helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -35,4 +35,15 @@
     animation: fadeIn 0.4s forwards;
     }
     
-  
+/*   
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    } */
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        }
+        

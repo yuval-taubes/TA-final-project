@@ -22,45 +22,55 @@ body{
     line-height: 18px;
 }
 
-.shadow{
-    margin: 0 auto;
-    width: 80%;
-    box-shadow: 0 20px 48px 0 rgba(59, 69, 152, 0.1);
-    height: 200px;
-}
 input{
     width: 100%;
     height: 50px;
     background-color: white ;
-    color: black;
+    color: rgb(31, 31, 31);
     padding: 0 15px;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 10px;
+    margin-top: 5px;
     border: 1px solid #E8E8E8;
-    box-shadow: 0 20px 48px 0 rgba(170, 169, 169, 0.1);
-    
+    /* box-shadow: 0 20px 48px 0 rgba(170, 169, 169, 0.1); */
+    letter-spacing: 0.17px;
 }
+
+input::placeholder, textarea::placeholder{
+    font-size: 15px;
+    color: rgb(156, 156, 156);
+    letter-spacing: 0.17px;
+}
+
+
+
 label{
     margin:8px 0 2px 0;
     display:inline-block;
     color: black;
     font-size:16px;
+    letter-spacing: 0.17px;
+    margin-top: 15px;
 }
 #submit-contact{
     width: 100%;
     height: 50px;
     color: white;
     padding: 0 15px;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 10px;
-    box-shadow: 0 20px 48px 0 rgba(170, 169, 169, 0.1);
+    /* box-shadow: 0 20px 48px 0 rgba(170, 169, 169, 0.1); */
     margin-top: 5px;
-    background-color: #0BBBC6;
+    background-color: orange;
     color: white;
     margin-top: 5px;
+    margin-top: 40px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 400;
 }
 #submit-contact:hover{
-    background-color: #10a5af;
+    background-color: rgb(214, 146, 20);
 
 }
 
@@ -75,14 +85,14 @@ textarea{
     height: 200px;
     resize: none;
     background-color: white ;
-    color: black;
+    color: rgb(31, 31, 31);
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 10px;
-    box-shadow: 0 20px 48px 0 rgba(170, 169, 169, 0.1);
+    /* box-shadow: 0 20px 48px 0 rgba(170, 169, 169, 0.1); */
     margin-top: 5px;
     border: 1px solid #E8E8E8;
-
+    padding: 12px 13px;
 }
 
 .back-image{
@@ -116,9 +126,11 @@ textarea{
 
 }
 .col2 h2{
-    color:black;
-    font-size: 40px;
-    font-weight: 400;
+    color:rgb(26, 26, 26);
+    font-size: 33px;
+    font-weight: 600;
+    
+    text-transform: uppercase;
 }
 .col2 p{
     color: black;
@@ -128,9 +140,11 @@ textarea{
     margin-left: 20px;
 }
 .col2-map h3{
-    color: black;
-    font-size: 25px;
-    font-weight: 500;
+    color:rgb(26, 26, 26);
+    font-size: 33px;
+    font-weight: 600;
+    
+    text-transform: uppercase;
 }
 form{
     width: 60%;
@@ -160,7 +174,7 @@ header{
 /* Map Shit */
 .map{
     width: 100%;
-    height:90%;
+    height:100%;
     background-color: #286FF2;
     border-radius: 10px;
 }

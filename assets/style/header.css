@@ -24,6 +24,15 @@ header ul li{
     cursor: pointer;
 }
 
+header ul li a{
+    font-family: 'Poppins', helvetica, sans-serif;
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
 header ul li + li{
     margin-left: 35px;
 }
