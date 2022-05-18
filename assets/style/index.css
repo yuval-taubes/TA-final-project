@@ -1,0 +1,441 @@
+@import "base.css";
+
+/*
+        --------------------------------------------------------
+        About me section
+        --------------------------------------------------------
+        */
+
+.landing {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-1 {
+  background-color: rgb(7, 7, 7);
+  width: 100%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+        --------------------------------------------------------
+        Columns styling
+        --------------------------------------------------------
+        */
+
+.col-content1 {
+  position: relative;
+  width: 100%;
+  height: calc(100vh);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+        --------------------------------------------------------
+        Columns content
+        --------------------------------------------------------
+        */
+
+.col-content1 img {
+  height: 550px;
+  width: 450px;
+  /* box-shadow: 20px 20px 48px 0 rgba(230, 230, 230, 0.3); */
+  object-fit: cover;
+  object-position: center;
+}
+
+.content1 .text-container {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  padding: 20px;
+  /* padding-left: 30px; */
+}
+
+.content1 .text-container h2 {
+  font-weight: 600;
+  font-family: "Poppins", helvetica, sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+.content1 .text-container h3 {
+  font-weight: 600;
+  font-family: "Poppins", helvetica, sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.content1 .text-container p {
+  font-family: "Poppins", helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.lrn-btn {
+  padding: 12px 35px;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: 'Poppins', helvetica, sans-serif; */
+  letter-spacing: 0.2px;
+  transition: 0.2s ease-in-out;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.lrn-btn {
+  padding: 12px 35px;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: 'Poppins', helvetica, sans-serif; */
+  letter-spacing: 0.2px;
+  transition: 0.2s ease-in-out;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+/*
+------------------------------------------------------------------------------
+                            Cookie Modals
+---------------------------------------------------------------------------
+*/
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-content h2{
+  font-family: "Poppins", helvetica, sans-serif;
+}
+
+.modal-content {
+  background-color: #f7f8f9;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 315px;
+}
+
+.modal-content p {
+  font-size: 16px;
+  line-height: 27px;
+  margin-top: 15px;
+  width: 273px;
+  font-family: "Poppins", helvetica, sans-serif
+}
+
+.form-1 {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+input[type="button"] {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: orange;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  transform: perspective(1px) translateZ(0);
+  backface-visibility: hidden;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-family: "Poppins", helvetica, sans-serif
+}
+
+.input-2 {
+  background-color: white !important;
+  border: solid 1px orange !important;
+  color: orange !important;
+  margin-left: 15px !important;;
+  font-family: "Poppins", helvetica, sans-serif
+}
+
+/* Modal 2 */
+
+.modal-2 {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-content-2 {
+  background-color: #f7f8f9;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 325px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.top {
+  text-align: left;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.fa-left-long {
+  color: black;
+  font-size: 20px;
+}
+
+/* Toggle Switch */
+
+.bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.row {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  padding: 10px;
+}
+
+.checkboxtext {
+  font-size: 110%;
+  display: inline;
+}
+
+
+/* <div class="about-us">
+<div class="text-container">
+    <h2>ABOUT US</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, deserunt recusandae sed assumenda
+        incidunt totam ad ipsam quis?</p>
+        <a class="lrn-btn" href="">Learn More</a>
+</div>
+</div> */
+
+
+
+.about-us {
+  height: 700px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-image: url(../img/person.jpg);
+  background-position: center;
+}
+
+.about-us .text-container{
+text-align: center;
+}
+
+.about-us .text-container h2{
+  margin-top: 40px;
+  font-family: "Poppins", helvetica, sans-serif;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.about-us .text-container p{
+  margin-bottom: 40px;
+  font-family: "Poppins", helvetica, sans-serif;
+  width: 700px;
+}
+
+.about-us .text-container a{
+  background-color: orange;
+  color: white;
+}
+
+.about-us .text-container a:hover{
+  background-color: rgb(187, 121, 0);
+}
+
+
+
+
+/*
+------------------------------------------------------------------------------
+                                MEADIA QUERIES
+---------------------------------------------------------------------------
+*/
+
+@media screen and (min-width: 320px) and (max-width: 580px) {
+  .landing .container {
+    width: 100%;
+  }
+
+  .container,
+  .row-container {
+    max-width: 450px;
+  }
+
+  .col-lg-2 {
+    flex: 0 0 100%;
+  }
+
+  .col-delete {
+    display: none;
+  }
+
+  .about-us .text-container p{
+    margin-bottom: 40px;
+    font-family: "Poppins", helvetica, sans-serif;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 960px) {
+  .landing .container {
+    width: 90%;
+  }
+
+  .container,
+  .row-container {
+    max-width: 650px;
+  }
+
+  .col-lg-2 {
+    flex: 0 0 100%;
+  }
+
+  .col-delete {
+    display: none;
+  }
+  
+  .about-us .text-container p{
+    margin-bottom: 40px;
+    font-family: "Poppins", helvetica, sans-serif;
+    width: 530px;
+  }
+
+}
+
+@media screen and (min-width: 870px) and (max-width: 1145px) {
+  .landing .container {
+    width: 100%;
+  }
+
+  .container,
+  .row-container {
+    max-width: 1100px;
+  }
+
+  .col-lg-2 {
+    flex: 0 0 50%;
+  }
+
+  .col-delete {
+    display: grid;
+  }
+
+  .about-us .text-container p{
+    margin-bottom: 40px;
+    font-family: "Poppins", helvetica, sans-serif;
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1145px) {
+  .landing .container {
+    width: 100%;
+  }
+
+  .container,
+  .row-container {
+    max-width: 1140px;
+  }
+
+  .col-lg-2 {
+    flex: 0 0 50%;
+  }
+
+  .col-delete {
+    display: grid;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .landing .container {
+    width: 80%;
+  }
+
+  .container,
+  .row-container {
+    max-width: 1140px;
+  }
+
+  .col-lg-2 {
+    flex: 0 0 50%;
+  }
+
+  .col-delete {
+    display: grid;
+  }
+}
+
+
+
