@@ -29,16 +29,6 @@
     margin: 0 auto;
     }
 
-    @-webkit-keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-  
-
     body{
     -webkit-animation: fadeIn 0.4s forwards;
     -moz-animation: fade-in 0.4s forwards;

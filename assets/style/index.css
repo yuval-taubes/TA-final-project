@@ -7,7 +7,7 @@
         */
 
 .landing {
-  background-image: url(../../../img/background.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -63,17 +63,18 @@
 .content1 .text-container h2 {
   font-weight: 600;
   font-family: "Poppins", helvetica, sans-serif;
-  font-size: 28px;
+  font-size: 32px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  margin-top: 30px;
 }
 
 .content1 .text-container h3 {
   font-weight: 600;
   font-family: "Poppins", helvetica, sans-serif;
-  font-size: 36px;
+  font-size: 40px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .content1 .text-container p {
@@ -96,8 +97,18 @@
   font-size: 16px;
 }
 
-.lrn-btn:hover {
-  opacity: 0.7;
+.lrn-btn {
+  padding: 12px 35px;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: 'Poppins', helvetica, sans-serif; */
+  letter-spacing: 0.2px;
+  transition: 0.2s ease-in-out;
+  border-radius: 25px;
+  font-size: 16px;
 }
 
 /*
@@ -111,7 +122,7 @@
 .modal {
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 50px;
   left: 0;
   top: 0;
   width: 100%;
@@ -125,6 +136,10 @@
   display: none;
 }
 
+.modal-content h2{
+  font-family: "Poppins", helvetica, sans-serif;
+}
+
 .modal-content {
   background-color: #f7f8f9;
   margin: auto;
@@ -132,16 +147,16 @@
   border: 1px solid #888;
   border-radius: 10px;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  text-align: center;
-  width: 350px;
+  width: 315px;
 }
 
 .modal-content p {
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 27px;
   margin-top: 15px;
+  width: 273px;
+  font-family: "Poppins", helvetica, sans-serif
 }
 
 .form-1 {
@@ -154,7 +169,7 @@
 
 input[type="button"] {
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: rgb(29, 222, 203);
+  background-color: orange;
   border-radius: 4px;
   color: #fff;
   font-size: 14px;
@@ -164,10 +179,15 @@ input[type="button"] {
   backface-visibility: hidden;
   cursor: pointer;
   padding: 8px 16px;
+  font-family: "Poppins", helvetica, sans-serif
 }
 
 .input-2 {
-  background-color: #ff6600 !important;
+  background-color: white !important;
+  border: solid 1px orange !important;
+  color: orange !important;
+  margin-left: 15px !important;;
+  font-family: "Poppins", helvetica, sans-serif
 }
 
 /* Modal 2 */
@@ -247,6 +267,56 @@ input[type="checkbox"] {
   display: inline;
 }
 
+
+/* <div class="about-us">
+<div class="text-container">
+    <h2>ABOUT US</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, deserunt recusandae sed assumenda
+        incidunt totam ad ipsam quis?</p>
+        <a class="lrn-btn" href="">Learn More</a>
+</div>
+</div> */
+
+
+
+.about-us {
+  height: 700px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-image: url(../img/person.jpg);
+  background-position: center;
+}
+
+.about-us .text-container{
+text-align: center;
+}
+
+.about-us .text-container h2{
+  margin-top: 40px;
+  font-family: "Poppins", helvetica, sans-serif;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.about-us .text-container p{
+  margin-bottom: 40px;
+  font-family: "Poppins", helvetica, sans-serif;
+  width: 700px;
+}
+
+.about-us .text-container a{
+  background-color: orange;
+  color: white;
+}
+
+.about-us .text-container a:hover{
+  background-color: rgb(187, 121, 0);
+}
+
+
+
+
 /*
 ------------------------------------------------------------------------------
                                 MEADIA QUERIES
@@ -254,13 +324,13 @@ input[type="checkbox"] {
 */
 
 @media screen and (min-width: 320px) and (max-width: 580px) {
-  .content-1 .container {
+  .landing .container {
     width: 100%;
   }
 
   .container,
   .row-container {
-    max-width: 400px;
+    max-width: 450px;
   }
 
   .col-lg-2 {
@@ -270,11 +340,17 @@ input[type="checkbox"] {
   .col-delete {
     display: none;
   }
+
+  .about-us .text-container p{
+    margin-bottom: 40px;
+    font-family: "Poppins", helvetica, sans-serif;
+    width: 400px;
+  }
 }
 
-@media screen and (min-width: 580px) and (max-width: 870px) {
-  .content-1 .container {
-    width: 100%;
+@media screen and (min-width: 580px) and (max-width: 960px) {
+  .landing .container {
+    width: 90%;
   }
 
   .container,
@@ -289,16 +365,48 @@ input[type="checkbox"] {
   .col-delete {
     display: none;
   }
+  
+  .about-us .text-container p{
+    margin-bottom: 40px;
+    font-family: "Poppins", helvetica, sans-serif;
+    width: 530px;
+  }
+
 }
 
-@media screen and (min-width: 870px) and (max-width: 1024px) {
-  .content1 .container {
-    width: 93%;
+@media screen and (min-width: 870px) and (max-width: 1145px) {
+  .landing .container {
+    width: 100%;
   }
 
   .container,
   .row-container {
-    max-width: 1000px;
+    max-width: 1100px;
+  }
+
+  .col-lg-2 {
+    flex: 0 0 50%;
+  }
+
+  .col-delete {
+    display: grid;
+  }
+
+  .about-us .text-container p{
+    margin-bottom: 40px;
+    font-family: "Poppins", helvetica, sans-serif;
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1145px) {
+  .landing .container {
+    width: 100%;
+  }
+
+  .container,
+  .row-container {
+    max-width: 1140px;
   }
 
   .col-lg-2 {
@@ -310,8 +418,8 @@ input[type="checkbox"] {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .content1 .container {
+@media screen and (min-width: 1150px) {
+  .landing .container {
     width: 80%;
   }
 
@@ -329,6 +437,5 @@ input[type="checkbox"] {
   }
 }
 
-.about-us {
-  height: 600px;
-}
+
+
