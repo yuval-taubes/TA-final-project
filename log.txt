@@ -1,0 +1,293 @@
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .vscode/settings.json
+        deleted:    assets/scripts/contact-us.js
+        deleted:    assets/scripts/index.js
+        deleted:    assets/style/base.css
+        deleted:    assets/style/contact-us.css
+        deleted:    assets/style/index.css
+        deleted:    contact-us.html
+        deleted:    index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git add .
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git commit -m"cleaned main"
+[main 08187c2] cleaned main
+ 8 files changed, 538 deletions(-)
+ delete mode 100644 .vscode/settings.json
+ delete mode 100644 assets/scripts/contact-us.js
+ delete mode 100644 assets/scripts/index.js
+ delete mode 100644 assets/style/base.css
+ delete mode 100644 assets/style/contact-us.css
+ delete mode 100644 assets/style/index.css
+ delete mode 100644 contact-us.html
+ delete mode 100644 index.html
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git push -u origin main
+To https://github.com/yuval-taubes/TA-final-project.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/yuval-taubes/TA-final-project.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git pull
+Merge made by the 'recursive' strategy.
+ text.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text.txt
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git add .
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git commit -m"cleaned main"
+[main 463b302] cleaned main
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 text.txt
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 566 bytes | 566.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/yuval-taubes/TA-final-project.git
+   0fcbd44..463b302  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (main)
+$ git switch contact-us
+Switched to branch 'contact-us'
+Your branch is up to date with 'origin/contact-us'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git pull
+Already up to date.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git merge map
+Merge made by the 'recursive' strategy.
+ assets/scripts/contact-us.js | 40 +++++++++++++---------------------------
+ 1 file changed, 13 insertions(+), 27 deletions(-)
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$
+
+ Session contents restored from 5/17/2022 at 3:42:08 PM 
+
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git pull
+Already up to date.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git status
+On branch contact-us
+Your branch is up to date with 'origin/contact-us'.
+
+nothing to commit, working tree clean
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git switch index
+Switched to branch 'index'
+Your branch is up to date with 'origin/index'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index)
+$ git switch contact-us
+Switched to branch 'contact-us'
+Your branch is up to date with 'origin/contact-us'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git branch
+* contact-us
+  cookies
+  index
+  main
+  map
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git switch index
+error: Your local changes to the following files would be overwritten by checkout:
+        assets/scripts/contact-us/contact-us.js
+        assets/style/contact-us/contact-us.css
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git add .
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git commit -m"validation"
+[contact-us d14346c] validation
+ 2 files changed, 6 insertions(+), 2 deletions(-)
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git push -u origin contact-us 
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 827 bytes | 827.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0        
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/yuval-taubes/TA-final-project.git
+   8441e77..d14346c  contact-us -> contact-us
+Branch 'contact-us' set up to track remote branch 'contact-us' from 'origin'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git switch index
+Switched to branch 'index'
+Your branch is up to date with 'origin/index'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index)
+$ git add .
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index)
+$ git commit -m"clean"
+[index 414bdf7] clean
+ 9 files changed, 549 deletions(-)
+ delete mode 100644 .vscode/settings.json
+ delete mode 100644 assets/scripts/contact-us.js
+ delete mode 100644 assets/scripts/index.js
+ delete mode 100644 assets/style/base.css
+ delete mode 100644 assets/style/contact-us.css
+ delete mode 100644 assets/style/index.css
+ delete mode 100644 contact-us.html
+ delete mode 100644 index.html
+ delete mode 100644 text.txt
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index)
+$ git push -u origin index
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 194 bytes | 194.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/yuval-taubes/TA-final-project.git
+   b77e450..414bdf7  index -> index
+Branch 'index' set up to track remote branch 'index' from 'origin'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index)
+$ git checkout index
+Already on 'index'
+Your branch is up to date with 'origin/index'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index)
+$ git merge --no-ff AaronDayrit-main
+merge: AaronDayrit-main - not something we can merge
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index)
+$ git merge --no-ff AaronDayrit-main
+merge: AaronDayrit-main - not something we can merge
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index)
+$ git checkout index
+Already on 'index'
+Your branch is up to date with 'origin/index'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index)
+$ git merge --no-ff AaronDayrit-main
+merge: AaronDayrit-main - not something we can merge
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index)
+$ git pull https://github.com/AaronDayrit/TA-final-project.git main
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 16 (delta 2), reused 16 (delta 2), pack-reused 0
+Unpacking objects: 100% (16/16), 525.22 KiB | 985.00 KiB/s, done.
+From https://github.com/AaronDayrit/TA-final-project
+ * branch            main       -> FETCH_HEAD
+CONFLICT (modify/delete): index.html deleted in HEAD and modified in 7fb0f6417aff48e51fdd1e7287c51d2f2aa7cd38. Version 7fb0f6417aff48e51fdd1e7287c51d2f2aa7cd38 of index.html left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index|MERGING)
+$ git add .
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index|MERGING)
+$ git commit -m "merge index"                                                                                                                                                                                               
+[index 7cea96c] merge index
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index)
+$ git push -u origin index
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.   
+Delta compression using up to 8 threads 
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (19/19), 525.57 KiB | 29.20 MiB/s, done.
+Total 19 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/yuval-taubes/TA-final-project.git
+   414bdf7..7cea96c  index -> index
+Branch 'index' set up to track remote branch 'index' from 'origin'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (index)
+$ git switch contact-us
+Switched to branch 'contact-us'
+Your branch is up to date with 'origin/contact-us'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git add .
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git commit -m"changed color theme"
+[contact-us 67ba03a] changed color theme
+ 2 files changed, 23 insertions(+), 34 deletions(-)
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git push -u origin contact-us 
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 908 bytes | 908.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/yuval-taubes/TA-final-project.git
+   d14346c..67ba03a  contact-us -> contact-us
+Branch 'contact-us' set up to track remote branch 'contact-us' from 'origin'.
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git add .
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git commit -m"final contact us commit"
+[contact-us 30d635e] final contact us commit
+ 2 files changed, 11 insertions(+), 14 deletions(-)
+
+yuval@Yuvals-PC MINGW64 /d/School Files/Mitt/Javascript/TA-final-project (contact-us)
+$ git push -u origin contact-us 
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 763 bytes | 763.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/yuval-taubes/TA-final-project.git
+   67ba03a..30d635e  contact-us -> contact-us
+Branch 'contact-us' set up to track remote branch 'contact-us' from 'origin'.
+
+
