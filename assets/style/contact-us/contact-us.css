@@ -9,20 +9,6 @@ body{
 /* ---------------------- input --------------------------- */
 /* -------------------------------------------------------- */
 
-.button { 
-    width:60%;
-    height: 50px;
-    border-radius: 10px;
-    font-size: 18px;
-    color: black;
-    background-color:#EE9B00;
-    cursor: pointer;
-    box-shadow: 0 20px 48px 0 rgba(0, 0, 0, 0.1);
-}
-
-.button:hover{
-    background-color: #da8d00;
-}
 
 
 .validation{
@@ -54,29 +40,28 @@ input{
     background-color: white ;
     color: black;
     padding: 0 15px;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 10px;
     border: 1px solid #E8E8E8;
     box-shadow: 0 20px 48px 0 rgba(170, 169, 169, 0.1);
-    margin-top: 5px;
     
 }
-input[type=submit]{
-    background-color: #FA8476;
-    color: white;
-    margin-top: 15px;
+label{
+    margin:8px 0 2px 0;
+    display:inline-block;
+    color: black;
+    font-size:16px;
 }
 #submit-contact{
     width: 100%;
     height: 50px;
-    background-color: #000000 ;
-    color: black;
+    color: white;
     padding: 0 15px;
     font-size: 18px;
     border-radius: 10px;
     box-shadow: 0 20px 48px 0 rgba(170, 169, 169, 0.1);
     margin-top: 5px;
-    background-color: #FA8476;
+    background-color: #0BBBC6;
     color: white;
     margin-top: 5px;
 }
@@ -89,7 +74,7 @@ input[type=checkbox]{
 }
 textarea{
     width: 100%;
-    height: 70%;
+    height: 200px;
     resize: none;
     background-color: white ;
     color: black;
@@ -101,9 +86,7 @@ textarea{
     border: 1px solid #E8E8E8;
 
 }
-label{
-    color: white;
-}
+
 .back-image{
     width: 100%;
     height: 100vh;
@@ -135,11 +118,11 @@ label{
 
 }
 .col2 h2{
-    color:white;
+    color:black;
     font-size: 40px;
 }
 .col2 p{
-    color: white;
+    color: black;
     font: 15px;
 }
 .col2 + .col2{
@@ -155,6 +138,7 @@ label{
 }
 form{
     width: 60%;
+    text-align: left;
 }
 form div{
     display: flex;
